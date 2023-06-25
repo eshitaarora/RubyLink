@@ -1,0 +1,17 @@
+<!-- index.erb -->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>RubyLink - URL Shortener</title>
+</head>
+<body>
+  <h1>RubyLink - URL Shortener</h1>
+  
+  <form action="/shorten" method="post">
+    <label for="long_url">Enter a long URL:</label>
+    <input type="text" id="long_url" name="long_url" required>
+    <button type="submit">Shorten</button>
+  </form>
+</body>
+</html>
