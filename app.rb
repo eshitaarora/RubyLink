@@ -1,7 +1,22 @@
-# app.rb
+#app.rb
 
 require 'sinatra'
 require 'securerandom'
+# app.rb
+
+# app.rb
+
+require 'sinatra/base'
+require 'webrick'
+
+# Set the web server handler explicitly to WEBrick
+configure { |c| c.server = 'webrick' }
+
+# Rest of your code...
+
+# Run the application
+Sinatra::Application.run!
+
 
 # In-memory data store to hold the URL mappings
 $url_mappings = {}
