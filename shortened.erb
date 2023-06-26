@@ -1,14 +1,10 @@
-<!-- shortened.erb -->
-
 <!DOCTYPE html>
 <html>
-<head>
-  <title>RubyLink - URL Shortened</title>
-</head>
-<body>
-  <h1>RubyLink - URL Shortened</h1>
-  
-  <p>Your shortened URL:</p>
-  <a href="<%= "/#{short_url}" %>"><%= request.base_url %>/<%= short_url %></a>
-</body>
+  <head>
+    <title>URL Shortened</title>
+  </head>
+  <body>
+    <h1>URL Shortened</h1>
+    <p>Your short URL is: <a href="<%= short_url %>"><%= short_url %></a></p>
+  </body>
 </html>
