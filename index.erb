@@ -1,17 +1,14 @@
-<!-- index.erb -->
-
 <!DOCTYPE html>
 <html>
-<head>
-  <title>RubyLink - URL Shortener</title>
-</head>
-<body>
-  <h1>RubyLink - URL Shortener</h1>
-  
-  <form action="/shorten" method="post">
-    <label for="long_url">Enter a long URL:</label>
-    <input type="text" id="long_url" name="long_url" required>
-    <button type="submit">Shorten</button>
-  </form>
-</body>
+  <head>
+    <title>URL Shortener</title>
+  </head>
+  <body>
+    <h1>URL Shortener</h1>
+    <form action="/shorten" method="post">
+      <label for="long_url">Enter a long URL:</label>
+      <input type="text" name="long_url" id="long_url" required>
+      <input type="submit" value="Shorten">
+    </form>
+  </body>
 </html>
